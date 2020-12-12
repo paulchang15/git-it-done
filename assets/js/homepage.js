@@ -81,7 +81,7 @@ var displayRepos = function(repos, searchTerm) {
     var repoEl = document.createElement("a");
     repoEl.classList = "list-item flex-row justify-space-between align-center";
     repoEl.setAttribute("href", "./single-repo.html?repo=" + repoName);
-    
+    repoEl.textContent = repoName;
     // append to container
     repoEl.appendChild(statusEl);
     
